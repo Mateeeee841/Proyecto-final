@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {%block body%}
     <ul>
-        <li>Name: {{object.user.first_name}}<li>
-        <li>Last Name: {{object.user.last_name}}<li>
-        <li>email: {{object.user.email}} </li>
-        <li>username: {{object.user.username}}</li>
-   
+        <li>Nombre: {{object.user.first_name}}<li>
+        <li>Apellido: {{object.user.last_name}}<li>
+        <li>Email: {{object.user.email}} </li>
+        <li>Username: {{object.user.username}}</li>
+        <li>Creado en: {{object.date_created}}</li>
+        
     <img height="128" src="{{ object.avatar.url }}" />
 
 <br>
