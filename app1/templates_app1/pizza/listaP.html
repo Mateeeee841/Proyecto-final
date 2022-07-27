@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{%block body%}
+<body >
+    
+    <h3 style="background-color: black; color:azure;text-align: center;">PIZZAS CREADAS</h3>
+    <table style="margin-left:0.5cm ;">
+    {%for pizza in pizzas %}
+    <tr style="margin-left:1cm ;">
+       <th> {{pizza.nombre}} </th>
+       <th>   <a href="{%url 'Pizza' pizza.id%}">[ver]</a> </th>
+       <th>  <a href="{%url 'editP' pizza.id%}">[editar]</a>  </th>
+       <th>  <a href="{%url 'borrarP' pizza.id%}">[eliminar]</a>  </th>
+    </tr>
+    {%endfor%}
+    </table>
+    <br>
+    <p style="margin-left:0.1cm ;"><a href="{%url 'crearP' %}" style="color:blue ;">Crear pizzas</a></p>
+</body>
+{%endblock%}
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+    
+        <h1>Datos del plato:</h1>
+        <ul>
+            <li>Nombre del Plato:     {{form.nombre}}</li>
+            <br>
+            <li>Ingredientes del plato :       {{form.ingredientes}}</li>
+        </ul>
+        <br>
+        <button type="submit" >sumbit</button>
+        
+        
+    </form>
+</body>
+</html>
