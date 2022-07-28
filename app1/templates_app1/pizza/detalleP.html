@@ -1,20 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+{% extends "base.html" %}
+{%block body%}
 <body>
-    <h1>{{pizza.nombre}}</h1>
-    <h2>{{pizza.creador}}</h2>
-    <li>Id: {{pizza.id}}  </li>
-    <li>Nombre: {{pizza.nombre}}</li>
-    <li>Ingredientes:{{pizza.ingredientes}}</li>
-    <li>Fecha de Creación: {{pizza.fecha}}</li>
-    <li>Foto: </li><img style="margin-left: 5cm;"height="128" src="{{ object.avatar.url }}" />
+    <ul>
+    <h2>{{pizza.nombre}}</h2>
+    <h4>Creador: {{pizza.creador}}</h4>
+    <br>
+    <p>Nombre: {{pizza.nombre}}</p>
+    <p>Ingredientes: {{pizza.ingredientes}}</p>
+    <p>Fecha de creación: {{pizza.fecha}}</p>
+    <br>
+    <p>Foto: <img style="margin-left: 5cm;"height="128" src="{{ object.avatar.url }}" /></p>
     <p><a href="{%url 'Pizzas'%}">Ver las Pizzas</a></p>
-    
+    </ul>
 </body>
-</html>
+{%endblock%}

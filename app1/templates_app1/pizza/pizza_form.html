@@ -16,19 +16,17 @@
 <body style="background-color: whitesmoke;">
     <form method="post">
         {%csrf_token%}
-        <h2 style="color:black ;"> Ingrese los datos de su Pizza:</h2>
-        <p> Nombre del plato: {{form.nombre}}</p>
+        <h2 style="color:black ;margin-left: 1cm;"> Ingrese los datos de su Pizza:</h2>
         <br>
+        <p> Nombre del plato: {{form.nombre}}</p>
         <br>
         <p>Creador: {{form.creador}}</p>
         <br>
-        <br>
         <p>Ingredientes: {{form.ingredientes}}</p>
         <br>
-        <br>
-        <p><button type="submit">sumbit</button> </p>  
+        <p><button type="submit"> SUMBIT </button> </p>  
     </form>
-    <p><a href="{%url 'Pizzas'%}">Ver Pizzas</a></p>
+    <p style="text-align: right;margin-right: 3cm;"><a href="{%url 'Pizzas'%}">Volver</a></p>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

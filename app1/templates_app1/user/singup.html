@@ -1,7 +1,27 @@
-<form method="post">
-    {%csrf_token%}
-    {{form.as_p}}
-    <input type="submit" value="Crear Cuenta">
+{% extends "user/panel_login.html"%}
+{%block log%}
+<h1 class="h3 mb-3 fw-normal">Crear Usuario</h1>
+
+      <p>Username: {{form.username}}</p>
+      <br>
+      <p>Contraseña: {{form.password1}}</p>
+      <br>
+      <p>Contraseña: {{form.password2}}</p>
+   
+
+     
+
+
+    
+    <div class="checkbox mb-3">
+      <label>
+        <a href="{% url 'login' %}">Iniciar Sesión</a>
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Registrarme</button> 
+    {% if form.errors %}
+    <p>No correspoden las contraseña, el nombre de usuario no es valido o la contraseña es muy parecida al usuario</p>
+    {% endif %}
 </form>
-<br>
-<a href="{% url 'login'%}">Iniciar sesion</a>   
+<br>  
+{%endblock%}

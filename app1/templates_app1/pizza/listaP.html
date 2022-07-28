@@ -9,12 +9,12 @@
        <th> {{pizza.nombre}} </th>
        <th>   <a href="{%url 'Pizza' pizza.id%}">[ver]</a> </th>
        <th>  <a href="{%url 'editP' pizza.id%}">[editar]</a>  </th>
-       <th>  <a href="{%url 'borrarP' pizza.id%}">[eliminar]</a>   </th>
+       <th style="color: red;">  <a style="color: red;" href="{%url 'borrarP' pizza.id%}">[eliminar]</a>   </th>
     </tr>
     {%endfor%}
     </table>
     <br>
-    <p style="margin-left:0.1cm ;"><a href="{%url 'crearP' %}" style="color:blue ;">Crear pizzas</a></p>
+    <p style="margin-left:0.1cm ;"><a href="{%url 'crearP' %}" style="color:rgb(10, 10, 73) ;font-weight: bold;">[crear]</a></p>
 </body>
 {%endblock%}
 

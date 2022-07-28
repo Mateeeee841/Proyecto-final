@@ -5,7 +5,7 @@ from ckeditor.fields import RichTextField
 
 class Publisher(models.Model):
     user = models.ForeignKey(User, on_delete=models.DO_NOTHING)
-    avatar = models.ImageField(upload_to="avatars", null=True, blank=True)
+    avatar = models.ImageField(upload_to="avatars", null=True, blank=True,default="silueta.jpg")
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True)
 
@@ -17,7 +17,7 @@ class pizza(models.Model):
     creador=models.CharField(max_length=20,blank=True)
     ingredientes=models.CharField(max_length=150)
     fecha = models.DateTimeField(auto_now_add=True)
-    avatar=models.ImageField(upload_to="avatars",null=True, blank=True)
+    avatar=models.ImageField(upload_to="avatars",null=True, blank=True,default="silueta.jpg")
 
     def __str__(self):
         return f"nombre: {self.nombre}"

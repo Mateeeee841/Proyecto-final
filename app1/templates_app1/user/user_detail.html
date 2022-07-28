@@ -1,15 +1,22 @@
 {% extends "base.html" %}
 {%block body%}
+<br>
     <ul>
-        <li>Nombre: {{object.user.first_name}}<li>
-        <li>Apellido: {{object.user.last_name}}<li>
-        <li>Email: {{object.user.email}} </li>
-        <li>Username: {{object.user.username}}</li>
-        <li>Creado en: {{object.date_created}}</li>
+        <p style="color: darkblue ;">Nombre: {{object.user.first_name}}</p>
+            <rb>
+        <p style="color: darkblue ;">Apellido: {{object.user.last_name}}</p>
+            <rb>
+        <p style="color: darkblue ;">Email: {{object.user.email}} </p>
+            <rb>
+        <p style="color: darkblue ;">Username: {{object.user.username}}</p>
+            <rb>    
+        <p style="color: darkblue ;">Creado en: {{object.date_created}}</p>
+
         
     <img height="128" src="{{ object.avatar.url }}" />
 
-<br>
-<p><a href="{%url 'editU' user.id %}">Editar usuario</a></p>
-<p><a href="{%url 'Pizzas' %}">Volver a Pizzas</a></p>
+    <br>
+        <p style="color: black;"><a href="{%url 'editU' user.id %}" style="color: black;">Editar usuario</a></p>
+        <p style="color: black;"><a href="{%url 'Pizzas' %}" style="color: black;">Volver</a></p>
+        </ul>
 {%endblock%}

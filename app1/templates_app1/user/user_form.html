@@ -1,10 +1,13 @@
 {% extends "base.html" %}
 {%block body%}
-
-<form method="post">
+<br>
+<form method="post" style="margin-left:0.2cm ;">
     {%csrf_token%}
-    {{form.as_p}}
-    <input type="submit" value="Sumbit">
+    <p>Usuario: {{form.username}} </p>
+    <p>Email: {{form.email}} </p>
+    <p>Nombre: {{form.first_name}} </p>
+    <p>Apellido: {{form.last_name}} </p>
+    <input type="submit" value="Sumbit" style="margin-left:5cm ;">
 </form>
 
 {%endblock%}

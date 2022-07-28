@@ -54,10 +54,6 @@ class PizzaDelete(LoginRequiredMixin,DeleteView):
     context_object_name="pizzas"
     template_name="pizza/deleteP.html"
     success_url=reverse_lazy("Pizzas")
-class PizzaUser(LoginRequiredMixin,UserPassesTestMixin,ListView):
-    model=pizza
-    context_object_name="pizzas"
-    template_name="pizza/listaU.html"
 #USER:
 class LogIn(LoginView):
     template_name="user/panel_login.html"
