@@ -12,7 +12,7 @@ class Publisher(models.Model):
     def __str__(self):
         return f"{self.user.username}"
 
-class pizza(models.Model):
+class Pizza(models.Model):
     nombre=models.CharField(max_length=20)
     creador=models.CharField(max_length=20,blank=True)
     ingredientes=models.CharField(max_length=150)

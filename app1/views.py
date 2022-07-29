@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader 
-from .models import Publisher, pizza
+from .models import Publisher, Pizza
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView
@@ -29,28 +29,28 @@ def ver_home(request):
     return HttpResponse(documento) 
 #PIZZA:
 class PizzaList(LoginRequiredMixin,ListView):
-    model=pizza                                  
+    model=Pizza                                  
     context_object_name="pizzas"               
     template_name="pizza/listaP.html"                     
 
 class PizzaDetalle(LoginRequiredMixin,DetailView):
-    model=pizza
+    model=Pizza
     template_name="pizza/detalleP.html"
 
 class PizzaCreacion(LoginRequiredMixin,CreateView):
-    model=pizza
+    model=Pizza
     success_url=reverse_lazy("Pizzas")            
     template_name="pizza/pizza_form.html"
     fields=["nombre","creador","ingredientes"]  
     
 class PizzaUpdate(LoginRequiredMixin,UpdateView):
-    model=pizza
+    model=Pizza
     success_url=reverse_lazy("Pizzas")
     template_name="pizza/editP.html"
     fields=["nombre","ingredientes"]
 
 class PizzaDelete(LoginRequiredMixin,DeleteView):
-    model=pizza
+    model=Pizza
     context_object_name="pizzas"
     template_name="pizza/deleteP.html"
     success_url=reverse_lazy("Pizzas")
