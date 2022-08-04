@@ -1,2 +1,2 @@
 release: python3 manage.py migrate
-web: gunicorn Proyecto-Final.wsgi
+web: gunicorn Proyecto-final.wsgi
