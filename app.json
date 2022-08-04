@@ -1,0 +1,25 @@
+{
+    "name": "Simple Content Management System",
+    "description": "A pizza blog built with django",
+    "repository": "https://github.com/Mateeeee841/Proyecto-final",
+    "logo": "https://iconarchive.com/download/i99744/sonya/swarm/Pizza.ico",
+    "keywords": ["django", "cms"],
+    "env": {
+      "SECRET": {
+        "description": "RANDOM SECRET.",
+        "generator": "secret"
+      },
+      "ALLOWED_HOST": {
+        "description": "Leave the * or your-app-name.herokuapp.com",
+        "value": "*"
+      }
+    },
+    "addons": [
+      {
+        "plan": "heroku-postgresql",
+        "options": {
+          "version": "11"
+        }
+      }
+    ]
+  }
