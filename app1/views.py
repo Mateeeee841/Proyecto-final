@@ -21,6 +21,12 @@ def mostrar_base(request):
     documento= plantilla.render (context)            
     return HttpResponse(documento) 
 
+def mostrar_about(request):
+    context={}
+    plantilla=loader.get_template("about.html")      
+    documento= plantilla.render (context)            
+    return HttpResponse(documento) 
+
 @login_required
 def ver_home(request):
     context={}

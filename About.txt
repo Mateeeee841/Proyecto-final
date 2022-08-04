@@ -1,3 +1,0 @@
-Este proyecto se basa en un blog de pizzas(crear pizzas,editarlas,eliminarlas y hasta verlas en detalle),
-esta idea sale a partir de que nuestra idea original era crear un blog de personas, pero hablando de nuestros gustos en común,
-nos dimos cuenta que hacer un blog de pizza sonaba una idea más original y divertida.

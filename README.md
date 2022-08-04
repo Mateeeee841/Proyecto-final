@@ -1,5 +1,5 @@
 # Trabajadores
-Proyecto final de Francisco Castro y Mateo Gomez Maryncak.
+Proyecto final de Francisco Castro y Mateo Gomez Maryncak
 
 Trabajo de Francisco Castro:Colaboración en la creación de models de Pizza y el crud.Ademas de colaborar en el css y boostrap.
 
