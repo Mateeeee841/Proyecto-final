@@ -47,13 +47,13 @@ class PizzaCreacion(LoginRequiredMixin,CreateView):
     model=Pizza
     success_url=reverse_lazy("Pizzas")            
     template_name="pizza/pizza_form.html"
-    fields=["nombre","creador","ingredientes"]  
+    fields=["nombre","creador","ingredientes","avatar"]  
     
 class PizzaUpdate(LoginRequiredMixin,UpdateView):
     model=Pizza
     success_url=reverse_lazy("Pizzas")
     template_name="pizza/editP.html"
-    fields=["nombre","ingredientes"]
+    fields=["nombre","ingredientes","avatar"]
 
 class PizzaDelete(LoginRequiredMixin,DeleteView):
     model=Pizza

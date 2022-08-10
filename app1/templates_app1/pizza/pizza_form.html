@@ -18,11 +18,7 @@
         {%csrf_token%}
         <h2 style="color:black ;margin-left: 1cm;"> Ingrese los datos de su Pizza:</h2>
         <br>
-        <p> Nombre del plato: {{form.nombre}}</p>
-        <br>
-        <p>Creador: {{form.creador}}</p>
-        <br>
-        <p>Ingredientes: {{form.ingredientes}}</p>
+       {{form.as_p}}
         <br>
         <p><button type="submit"> SUMBIT </button> </p>  
     </form>

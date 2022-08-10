@@ -52,7 +52,7 @@ ROOT_URLCONF = 'mvt.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r"C:\Users\User\Desktop\Final_Python\Proyecto-final\app1\templates_app1"],
+        'DIRS': [r"C:\Users\User\Desktop\Final_Python\Proyecto-final\Proyecto-final\app1\templates_app1"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
