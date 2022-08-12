@@ -8,7 +8,7 @@ Trabajo de Mateo Gomez Maryncak:Models Publisher y Pizza,ReadMe,About,Crud de Pi
 # Datos importantes
 Plantillas de pruebas: https://docs.google.com/spreadsheets/d/1gP8cLs2Me_gbZ8LDBys4JVQumeW0GPu-XQhmHCKobN8/edit?usp=sharing
 
-Video (Que hace la app?):https://youtu.be/hLg-V-M8aY0
+Video (Que hace la app?):https://www.youtube.com/watch?v=N63oP7bgaac
 
 Para agregar imágenes o asignar publisher debemos hacerlo desde el admin de django.Para acceder a este creamos un usuario con el comando python manage.py createsuperuser y luego entramos al /admin
 
